@@ -18,7 +18,7 @@ pocwatchdog is a cross-platform Python task scheduler that supports scheduled ta
 Install pocwatchdog using pip:
 
 ```bash
-pip install pocwatchdog
+pip install -U pocwatchdog
 ```
 
 ## Usage
