@@ -28,8 +28,8 @@ def run(
     failure_body="task failure: error_message",
     failure_file_path=None,
     failure_img_path=None,
-    notify_success=True,
-    notify_failure=True,
+    notify_success=False,
+    notify_failure=False,
 ):
     """
     Run the task scheduler.
