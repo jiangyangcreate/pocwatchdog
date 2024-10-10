@@ -2,7 +2,10 @@
 
 [English](README.md)
 
-pocwatchdog 是一个跨平台的 Python 任务调度器，支持定时执行任务并通过邮件发送通知。
+pocwatchdog 是一个跨平台的 Python 任务调度器，支持丰富的定时执行任务，甚至是嵌套，并通过邮件发送通知：包括代码的报错信息、文件、截图。
+
+![2134e47ae8ad5ff7d54792840dbe450](https://github.com/user-attachments/assets/37c6d6df-631a-430d-ae42-5ce4b565ff06)
+
 
 ## 特性
 
