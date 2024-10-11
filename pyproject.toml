@@ -23,10 +23,3 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/jiangyangcreate/pocwatchdog"
 Issues = "https://github.com/jiangyangcreate/pocwatchdog/issues"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools]
-include_package_data = true
-package_dir = { "" = "src" }
