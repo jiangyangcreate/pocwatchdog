@@ -8,29 +8,30 @@ from email.header import Header
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from typing import Callable, Union, List, Dict, Optional
 
 import schedule
 
 def run(
-    job,
-    schedule_time,
-    sender=None,
-    password=None,
-    recipients=None,
-    smtp_server=None,
-    smtp_port=None,
-    smtp_ssl=True,
-    success_subject="success",
-    success_body="success",
-    success_file_path=None,
-    success_img_path=None,
-    failure_subject="failure",
-    failure_body="task failure: error_message",
-    failure_file_path=None,
-    failure_img_path=None,
-    notify_success=False,
-    notify_failure=False,
-):
+    job: Callable,
+    schedule_time: Union[int, float, str, List[str], Dict[Union[int, str], Union[int, float, str, List[str]]]],
+    sender: Optional[str] = None,
+    password: Optional[str] = None,
+    recipients: Optional[List[str]] = None,
+    smtp_server: Optional[str] = None,
+    smtp_port: Optional[int] = None,
+    smtp_ssl: bool = True,
+    success_subject: str = "success",
+    success_body: str = "success",
+    success_file_path: Optional[str] = None,
+    success_img_path: Optional[str] = None,
+    failure_subject: str = "failure",
+    failure_body: str = "task failure: error_message",
+    failure_file_path: Optional[str] = None,
+    failure_img_path: Optional[str] = None,
+    notify_success: bool = False,
+    notify_failure: bool = False
+) -> None:
     """
     Run the task scheduler.
 
