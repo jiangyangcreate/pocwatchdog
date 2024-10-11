@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "pocwatchdog"
-version = "1.1.1"
+version = "1.1.3"
 authors = [
   { name="Allen", email="jiangyangcreate@gmail.com" },
 ]
