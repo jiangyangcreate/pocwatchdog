@@ -1,15 +1,15 @@
-import schedule
+import os
+import re
 import time
+import traceback
+from datetime import datetime
 import smtplib
-from email.mime.text import MIMEText
 from email.header import Header
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
-import traceback
-from datetime import datetime
-import os
-import re
+from email.mime.text import MIMEText
 
+import schedule
 
 def run(
     job,
