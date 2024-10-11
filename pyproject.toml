@@ -1,9 +1,9 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=42", "wheel", "schedule>=1.1.0"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "pocwatchdog"
-version = "1.1.3"
+version = "1.1.4"
 authors = [
   { name="Allen", email="jiangyangcreate@gmail.com" },
 ]
@@ -14,6 +14,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "schedule>=1.1.0",
 ]
 
 [project.urls]
